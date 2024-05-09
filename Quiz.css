@@ -1,0 +1,252 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #ecf5ff;
+}
+
+.menu-bar 
+{ 
+    background-color: #56a5eb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar a 
+{
+    text-decoration: none;
+    color: #000; 
+}
+
+#home-button 
+{
+  font-size: 1rem;
+  padding: 1rem 0;
+  width: 8rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: #d6d4d4e6;
+}
+
+#home-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#home-button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#logout-button 
+{
+  font-size: 1rem;
+  padding: 1rem 0;
+  width: 8rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: #d6d4d4e6;
+}
+
+#logout-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#logout-button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.name
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.main
+{
+    background-color: #d6d4d4e6;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto 0;
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid black;    
+}
+
+.quiz
+{
+    padding: 10px 0; 
+}
+
+.question-number 
+{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.timer 
+{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 18px; 
+    float: right; 
+    margin-left: 10px; 
+    margin-top: -30px;
+}
+
+.line 
+{
+    border: none;
+    border-top: 6px solid #000; 
+    margin-top: 20px; 
+}
+
+.quiz h1
+{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn
+{
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled])
+{
+    background-color: black;
+    color: white;
+}
+
+.btn:disabled
+{
+    cursor: no-drop;
+}
+
+#next-button
+{
+    background-color: darkblue;
+    color: white;
+    font-weight: 500;
+    width: 150px; 
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; 
+}
+
+.correct
+{
+    background-color: lightgreen;
+}
+
+.incorrect
+{
+    background-color: lightcoral;
+}
+
+.submit-button 
+{
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    padding: 10px 0px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: block; 
+    width: 100px; 
+    font-size: 16px;
+    margin: 10px auto; 
+    cursor: pointer;
+}
+
+.table-container {
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.table-container table {
+    width: 100%; 
+    border-collapse: collapse;
+    border: 1px solid #ddd; 
+    font-family: Arial, sans-serif; 
+}
+
+.table-container th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #2e8b57; 
+    border-right: 1px solid black; 
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+    border-right: 1px solid black; 
+}
+
+.table-container td:last-child,
+.table-container th:last-child {
+    border-right: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
